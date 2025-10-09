@@ -77,6 +77,19 @@
             text-align: center;
             transition: transform 0.3s;
         }
+        .skills{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .skills:hover{
+            transform: translateY(-10px);
+        }
         .project:hover {
             transform: translateY(-10px);
         }
@@ -170,6 +183,7 @@
         <h2>About Me</h2>
         <img src="profile_photo.jpg" alt="Akshith" class="profile-photo">
         <p>Hi, I'm Akshith, a passionate web developer with a flair for creating visually stunning and interactive websites. With 1 year of experience in HTML, CSS, JavaScript, and React, I craft digital experiences that blend functionality with artistry. Let’s build something extraordinary!</p>
+        
     </section>
 
     <section id="projects">
@@ -185,6 +199,11 @@ It helps track gas usage and alerts users when the cylinder is nearly empty for 
 An AI Music Composition System uses deep learning models to generate original melodies and harmonies automatically.
 It helps musicians, composers, and creators produce unique music efficiently with minimal manual effort.</p>
         </div>
+        <h2>Skills</h2>
+        <div class="skills">
+            <u><h3>Cyber Security</h3></u>
+            <p>Networking	TCP/IP, DNS, DHCP, Subnetting, OSI Model, Firewalls, VPN
+Operating Systems	Linux (Kali, Ubuntu), Windows Server, Command Line</p>
     </section>
 
     <section id="contact">
@@ -231,5 +250,4 @@ It helps musicians, composers, and creators produce unique music efficiently wit
         });
     </script>
 </body>
-
 </html>
